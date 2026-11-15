@@ -13,7 +13,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/fraunces-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/public-sans-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="preload" href="img/hero.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -37,46 +38,39 @@
 <main id="main">
 <section class="hero" id="top">
   <div class="wrap">
-    <div>
-      <p class="eyebrow">Back office for small businesses and the trades</p>
+    <div class="headline">
       <h1>Get your nights and <em>weekends</em> back.</h1>
+      <p class="sub">A back office designed for the trades, keeping field operations profitable and tax season smooth</p>
     </div>
-    <div class="side">
-      <p>Most small businesses have been priced out of a real back office. We start with your books, then take the rest of the paperwork off your plate, so you can get back to running the business.</p>
+  </div>
+  <div class="side">
+    <div class="wrap">
+      <p>Most small businesses have been priced out of a real back office. We start with your books, then take the rest of the paperwork off your plate, so you can run the business.</p>
       <div class="btns"><a class="btn light" href="mailto:hello@ivllc.xyz?subject=Back%20office%20help">Email us <span>&rarr;</span></a><a class="btn line" href="#how">How we work</a></div>
     </div>
   </div>
 </section>
 
-<section class="ladder light-bg" aria-labelledby="ladder-title">
+<section class="ladder light-bg" id="how" aria-labelledby="ladder-title">
   <div class="wrap">
     <div class="head">
-      <div><p class="eyebrow">How we grow with you</p><h2 id="ladder-title">A professional back office, without hiring one.</h2></div>
-      <p>It starts with the books. Once we see your books, we see your business, and we can take on as much of the rest as you want. Every step is fitted to you.</p>
+      <div><h2 id="ladder-title">A professional back office, without hiring one.</h2></div>
+      <p>It starts with the books. From there, we can take on as much of the rest as you want. Every step is fitted to you.</p>
     </div>
-    <ol class="steps">
-      <li><h3>Your books</h3><p>Transactions categorized, every account reconciled, and the month closed with a clean profit and loss statement.</p></li>
-      <li><h3>Your back office</h3><p>Payroll, W-2s, 1099s, W-9s, bills and invoices, handled so the paperwork stops following you home.</p></li>
-      <li><h3>Your advisors</h3><p>We become your contracted advisors: what your numbers are saying, which jobs make money, and what to do next.</p></li>
-      <li><h3>Your systems</h3><p>If you want it, we set up tools that take the repetitive office work off your team for good.</p></li>
-    </ol>
   </div>
 </section>
 
 <section class="offers light-bg">
   <article class="offer" id="bookkeeping">
     <div class="wrap">
-      <div class="ph"><img src="img/books.jpg" alt="A business owner sorting receipts with a calculator at her desk"></div>
+      <div class="ph"><picture><source srcset="img/books.webp" type="image/webp"><img src="img/books.jpg" width="1800" height="1200" loading="lazy" decoding="async" alt="A business owner sorting receipts with a calculator at her desk"></picture></div>
       <div class="op">
-        <p class="eyebrow">Bookkeeping</p>
         <h2>Books that are accurate, current and easy to read.</h2>
         <p class="lead">No more catching up on months of statements in one long weekend. Send us your statements and we close the month within 48 hours of receiving them.</p>
-        <h4>What's included</h4>
         <ul>
           <li>Bank and credit card transactions categorized</li>
-          <li>Every account reconciled to the statements</li>
-          <li>Month closed within 48 hours of receiving your statements</li>
-          <li>A clean profit and loss statement and balance sheet</li>
+          <li>Accounts reconciled to the statements</li>
+          <li>A profit and loss statement and balance sheet</li>
           <li>Profit by project or job</li>
         </ul>
         <a class="btn light" href="mailto:hello@ivllc.xyz?subject=Bookkeeping">Ask about bookkeeping <span>&rarr;</span></a>
@@ -86,20 +80,18 @@
 
   <article class="offer flip" id="back-office">
     <div class="wrap">
-      <div class="ph"><img src="img/backoffice.jpg" alt="Binders, a calculator and a phone on an office desk"></div>
+      <div class="ph"><picture><source srcset="img/backoffice.webp" type="image/webp"><img src="img/backoffice.jpg" width="1200" height="1800" loading="lazy" decoding="async" alt="Binders, a calculator and a phone on an office desk"></picture></div>
       <div class="op">
-        <p class="eyebrow">Payroll, admin and tax prep</p>
         <h2>The forms and filings, handled.</h2>
-        <p class="lead">W-2s, 1099s and W-9s are not why you went into business. We handle the paperwork, and at tax time your return is prepared and e-filed with our partner firm.</p>
-        <h4>What's included</h4>
+        <p class="lead">W-2s, 1099s and W-9s are not why you went into business. We handle the paperwork, and at tax time your return is prepared and e-filed.</p>
         <ul>
           <li>Payroll and W-2 handling</li>
           <li>1099-NEC and 1099-MISC filings</li>
           <li>W-9 collection from your subcontractors</li>
           <li>Bills tracked and invoices followed up</li>
-          <li>Personal, business and nonprofit tax returns, e-filed</li>
+          <li>Personal, business and nonprofit tax returns</li>
         </ul>
-        <p class="fine">Tax returns are prepared and e-filed with our partner, Conundrum Solutions, an IRS-authorized e-file provider. Your fee is confirmed in writing after we see your documents.</p>
+        <p class="fine">Our partner, Conundrum Solutions, is an IRS-authorized e-file provider.</p>
         <a class="btn light" href="mailto:hello@ivllc.xyz?subject=Back%20office%20help">Ask about the back office <span>&rarr;</span></a>
       </div>
     </div>
@@ -107,18 +99,16 @@
 
   <article class="offer" id="advisory">
     <div class="wrap">
-      <div class="ph"><img src="img/advisory.jpg" alt="A business owner in a flannel shirt meeting with an advisor at a table"></div>
+      <div class="ph"><picture><source srcset="img/advisory.webp" type="image/webp"><img src="img/advisory.jpg" width="1202" height="1800" loading="lazy" decoding="async" alt="A tradesman in a cap and coveralls shaking hands with a customer"></picture></div>
       <div class="op">
-        <p class="eyebrow">Advisory</p>
-        <h2>Once we see the books, we see the business.</h2>
-        <p class="lead">With your books current, we can sit down with you as your contracted advisors and help you decide what comes next. You choose how far it goes.</p>
-        <h4>What we can help with</h4>
+        <h2>Accurate accounting with operational insights</h2>
+        <p class="lead">Clean books provide insights that your day-to-day routines hide. We advise on more than accounting, you choose how far it goes.</p>
+        <h3 class="list-label">Offerings</h3>
         <ul>
-          <li>A regular review of what your numbers are saying</li>
-          <li>Which jobs and services actually make you money</li>
-          <li>Cash flow, so payroll and bills never surprise you</li>
-          <li>Office processes written down so they run without you</li>
-          <li>Tools that take repetitive office work off your team</li>
+          <li>A regular review of your financial standing, including Cash Flow</li>
+          <li>Job costing and project profitability</li>
+          <li>Documented and standardized office processes</li>
+          <li>Opportunity for automation</li>
         </ul>
         <a class="btn light" href="mailto:hello@ivllc.xyz?subject=Advisory">Talk it through with us <span>&rarr;</span></a>
       </div>
@@ -129,15 +119,14 @@
 <section class="sample" aria-labelledby="sample-title">
   <div class="wrap">
     <div>
-      <p class="eyebrow">What you get</p>
       <h2 id="sample-title">Your whole business, readable on one page.</h2>
-      <p>Each month you get a clean profit and loss statement, an organized balance sheet, and the profit on every project or job.</p>
+      <p>Each month you get a profit and loss statement, an organized balance sheet, and the profit on every project or job.</p>
       <p style="font-size:16px;opacity:.8">This is a sample. The business and numbers are made up.</p>
     </div>
     <figure class="card" style="margin:0" aria-label="Sample month-end summary with made-up numbers">
-      <div class="bar"><i></i><i></i><i></i><span>Sample &middot; example numbers</span></div>
+      <div class="bar"><i></i><i></i><i></i></div>
       <div class="body">
-        <div class="t"><b>Your Business LLC</b><small>Month-end summary &middot; closed within 48 hours</small></div>
+        <div class="t"><b>Your Business LLC</b><small>Month-end summary</small></div>
         <div class="kpis">
           <div class="kpi"><small>Income</small><b>$48,200</b></div>
           <div class="kpi"><small>Expenses</small><b>$39,430</b></div>
@@ -146,9 +135,9 @@
         <table class="jobs">
           <thead><tr><th>Profit by job</th><th>Income</th><th>Profit</th></tr></thead>
           <tbody>
-            <tr><td>Kitchen remodel<div class="meter"><i style="width:38%"></i></div></td><td>$21,400</td><td>$8,130 &middot; 38%</td></tr>
-            <tr><td>Tenant build-out<div class="meter"><i style="width:33%"></i></div></td><td>$18,600</td><td>$6,140 &middot; 33%</td></tr>
-            <tr><td>Service calls<div class="meter"><i style="width:73%"></i></div></td><td>$8,200</td><td>$5,980 &middot; 73%</td></tr>
+            <tr><td>Kitchen remodel<div class="meter"><i style="width:38%"></i></div></td><td>$21,400</td><td>$8,130 (38%)</td></tr>
+            <tr><td>Tenant build-out<div class="meter"><i style="width:33%"></i></div></td><td>$18,600</td><td>$6,140 (33%)</td></tr>
+            <tr><td>Service calls<div class="meter"><i style="width:73%"></i></div></td><td>$8,200</td><td>$5,980 (73%)</td></tr>
           </tbody>
         </table>
         <div class="foot"><span>Job profit $20,250, less overhead $11,480, leaves <b>$8,770</b>.</span><span>Reconciled: checking, savings, credit card</span></div>
@@ -159,10 +148,10 @@
 
 <section class="pricing light-bg" id="pricing" aria-labelledby="pricing-title">
   <div class="wrap">
-    <div><p class="eyebrow">Pricing</p><h2 id="pricing-title">Sized and priced for small businesses.</h2></div>
+    <div><h2 id="pricing-title">Sized and priced for businesses your size.</h2></div>
     <div>
       <div class="prices">
-        <div class="price"><div><h3>Bookkeeping and payroll</h3><p>Billed by the hour, and never more than the monthly cap.</p></div><div class="amt">$40 an hour<small>capped at $1,200 a month</small></div></div>
+        <div class="price"><div><h3>Bookkeeping and payroll</h3><p>Billed by the hour.</p></div><div class="amt">$40 an hour<small>capped at $1,200 a month</small></div></div>
         <div class="price"><div><h3>Tax returns</h3><p>Fee confirmed in writing after we see your documents.</p></div><div class="amt">from $250<small>per return</small></div></div>
         <div class="price"><div><h3>Advisory and systems</h3><p>Fitted to what you want help with.</p></div><div class="amt">Quoted<small>per engagement</small></div></div>
       </div>
@@ -173,12 +162,11 @@
 
 <section class="people" id="partners" aria-labelledby="people-title">
   <div class="wrap">
-    <p class="eyebrow">Who we are</p>
     <h2 id="people-title">Two firms, one back office for your business.</h2>
-    <p class="mission">Small businesses have long gone without professional help for the work they never started a business to do, because it cost too much or simply wasn't available to them. We're here to change that. <strong>Focus on the work you love. Let us handle the rest.</strong></p>
+    <p class="mission">Small businesses have long gone without professional help for the work they never started a business to do. We're here to change that. <strong>Focus on the work you love. Let us handle the rest.</strong></p>
     <div class="grid">
       <div class="panel">
-        <div class="who-head"><figure class="portrait"><img src="img/joel-headshot.jpg" width="120" height="159" alt="Black and white headshot of Joel Peterlin, smiling, in a suit and tie"></figure><div><h3>Joel Peterlin, Interregnum Ventures</h3>
+        <div class="who-head"><figure class="portrait"><picture><source srcset="img/joel-headshot.webp" type="image/webp"><img src="img/joel-headshot.jpg" width="120" height="159" loading="lazy" decoding="async" alt="Black and white headshot of Joel Peterlin, smiling, in a suit and tie"></picture></figure><div><h3>Joel Peterlin, Interregnum Ventures</h3>
         <p>Joel runs your books and your back office day to day.</p></div></div>
         <ul class="exp">
           <li><b>10 years</b><span>managing utility subcontractors on natural gas construction projects, including numerous $1M+ projects with local and government entities</span></li>
@@ -192,31 +180,19 @@
         <a class="btn gold" href="mailto:hello@ivllc.xyz">Email Joel <span>&rarr;</span></a>
       </div>
       <div class="panel">
-        <div class="who-head"><figure class="portrait"><img src="img/conundrum-logo.png" width="120" height="120" alt="Conundrum Solutions logo"></figure><div><h3>Our partner, Conundrum Solutions</h3></div></div>
-        <p>Conundrum Solutions brings a background in industrial consulting, advising multiple Fortune 500 companies, to the back offices of small businesses. Together we cover your books, your tax returns and the systems that keep your office running.</p>
+        <div class="who-head"><figure class="portrait"><img src="img/conundrum-logo.png" width="120" height="120" loading="lazy" decoding="async" alt="Conundrum Solutions logo"></figure><div><h3>Our partner, Conundrum Solutions</h3></div></div>
+        <p>Together we cover your books, your tax returns and the systems that keep your office running.</p>
         <ul class="exp">
-          <li><b>Fortune 500</b><span>industrial consulting experience, now applied to small business operations</span></li>
+          <li><b>Fortune 500</b><span>industrial consulting for multiple Fortune 500 companies, now applied to small business operations</span></li>
         </ul>
         <ul class="creds">
           <li>QuickBooks ProAdvisor</li>
           <li>Client Advisory Services certified</li>
-          <li>Current PTIN and EFIN, for tax returns prepared and e-filed in house</li>
+          <li>Current PTIN and EFIN, for tax returns e-filed in house</li>
         </ul>
         <a class="btn line" href="https://conundrumsolved.tech/" target="_blank" rel="noopener">Visit Conundrum Solutions <span>&rarr;</span></a>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="how light-bg" id="how" aria-labelledby="how-title">
-  <div class="wrap">
-    <p class="eyebrow">How it works</p>
-    <h2 id="how-title">You send the statements. We take it from there.</h2>
-    <ol>
-      <li><h3>Send us your statements</h3><p>That's your part. For a tax return, you send your documents.</p></li>
-      <li><h3>We do the books</h3><p>We categorize, reconcile and close the month within 48 hours of receiving your statements.</p></li>
-      <li><h3>We look at the business with you</h3><p>You get clear numbers, and when you're ready, we talk about what else we can take off your plate.</p></li>
-    </ol>
   </div>
 </section>
 
@@ -242,5 +218,27 @@
     <div class="small"><span>&copy; 2026 Interregnum Ventures LLC</span><span>Photos: Pexels</span></div>
   </div>
 </footer>
+<script>
+/* Scroll reveals. Progressive enhancement: without JS, or with reduced motion, everything is simply shown. */
+(function(d){
+  if(!('IntersectionObserver' in window)||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;
+  var groups=['.ladder .head>*','.offer .ph','.offer .op>*','.offer li','.sample .wrap>div','.sample .card','.pricing .wrap>div>*','.price','.people h2','.people .mission','.panel','.panel .exp li','.panel .creds li','.cta .wrap>*','.fgrid>div'];
+  var els=[];
+  groups.forEach(function(sel){
+    var n=d.querySelectorAll(sel);
+    for(var i=0;i<n.length;i++){var e=n[i];if(e.classList.contains('rv'))continue;
+      var k=0,s=e.previousElementSibling;while(s&&k<6){if(s.classList.contains('rv'))k++;s=s.previousElementSibling;}
+      e.style.setProperty('--d',(k*70)+'ms');e.classList.add('rv');els.push(e);}
+  });
+  function show(e){e.classList.add('in');io.unobserve(e);}
+  function all(){els.forEach(show);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting)show(x.target);});},{rootMargin:'0px 0px -10% 0px'});
+  d.documentElement.classList.add('rv-on');
+  els.forEach(function(e){io.observe(e);});
+  if(location.hash)all();
+  addEventListener('hashchange',all);addEventListener('beforeprint',all);
+  d.addEventListener('focusin',function(ev){var e=ev.target.closest&&ev.target.closest('.rv');if(e)show(e);});
+})(document);
+</script>
 </body>
 </html>
