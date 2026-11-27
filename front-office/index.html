@@ -15,6 +15,16 @@
 <link rel="preload" href="../fonts/public-sans-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../img/advisory.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="../styles.css?v=12">
+<style>
+  /* Front Office promo video — this page only */
+  .fo-promo{background:#071f17;padding:8px 0 72px}
+  .fo-promo .wrap{max-width:1100px}
+  .fo-promo-frame{margin:0}
+  .fo-promo video{display:block;width:100%;height:auto;border-radius:6px;background:#06170f;border:1px solid rgba(220,185,90,.35);box-shadow:0 30px 80px rgba(0,0,0,.35)}
+  .fo-promo figcaption{margin:14px 0 0;font-size:15px;opacity:.85;color:#f6f2e7}
+  @media(max-width:720px){.fo-promo{padding:0 0 48px}}
+</style>
+
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -40,6 +50,18 @@
     <p class="eyebrow">Front Office</p>
     <h1>Extra hands for your shop, without hiring or learning new software.</h1>
     <p class="sub">Joel works with you to build custom automations around how your business already runs. Think of it like a team of hired help that works for you, or backs up the employees you already have. Check in from your phone on the go or at your desk. Nothing ever goes out in your name without your yes.</p>
+  </div>
+</section>
+
+<section class="fo-promo" aria-label="Front Office promo video">
+  <div class="wrap">
+    <figure class="fo-promo-frame">
+      <video controls playsinline preload="metadata" poster="front-office-promo-poster.jpg" width="1920" height="1080">
+        <source src="front-office-promo.mp4" type="video/mp4">
+        Sorry, your browser doesn&rsquo;t play this video. You can <a href="front-office-promo.mp4">download it</a> instead.
+      </video>
+      <figcaption>Music: &ldquo;Motivating Mornings&rdquo; by Ahjay Stelino, via Mixkit.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -145,14 +167,14 @@
         <li><a href="https://conundrumsolved.tech/" target="_blank" rel="noopener">Conundrum Solutions</a></li>
       </ul></div>
     </div>
-    <div class="small"><span>&copy; 2026 Interregnum Ventures LLC</span><span>Photos: Pexels</span></div>
+    <div class="small"><span>&copy; 2026 Interregnum Ventures LLC</span><span>Photos: Pexels &middot; Music: Motivating Mornings by Ahjay Stelino (Mixkit)</span></div>
   </div>
 </footer>
 <script>
 /* Scroll reveals. Progressive enhancement: without JS, or with reduced motion, everything is simply shown. */
 (function(d){
   if(!('IntersectionObserver' in window)||(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches))return;
-  var groups=['.ladder .head>*','.offer .ph','.offer .op>*','.offer li','.sample .wrap>div','.sample .card','.pricing .wrap>div>*','.price','.people h2','.people .mission','.panel','.panel .exp li','.panel .creds li','.cta .wrap>*','.fgrid>div','.svc','.steps li','.promise','.legal .measure>*','.page-hero h1','.page-hero .sub'];
+  var groups=['.ladder .head>*','.offer .ph','.offer .op>*','.offer li','.sample .wrap>div','.sample .card','.pricing .wrap>div>*','.price','.people h2','.people .mission','.panel','.panel .exp li','.panel .creds li','.cta .wrap>*','.fgrid>div','.svc','.steps li','.promise','.legal .measure>*','.page-hero h1','.page-hero .sub','.fo-promo-frame'];
   var els=[];
   groups.forEach(function(sel){
     var n=d.querySelectorAll(sel);
